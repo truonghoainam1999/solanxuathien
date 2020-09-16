@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt('Nhập số phần tử của mảng'))
+        let arr = [];
+        let count = 0 
+        for(let i = 0 ; i < n ; i++){
+            arr[i] = prompt(`Ký tự tại ${i} : `)
+        }
+        console.log(arr)
+        let a = prompt('Nhập kí tự cần tìm : ')
+        function findWord(){
+            for(let i = 0  ; i < arr.length ; i++){
+                if(a == arr[i]){
+                    count ++ ;
+                }
+                }
+                if(count >= 1 ){
+                    alert(`Số lần xuất hiện của ${a} là ${count}`)
+                }else{
+                    alert(`Không có tìm thấy số ${a} trong mảng`)
+                }
+            }
+
+        findWord(a,arr);
+    </script>
+</body>
+</html>
